@@ -1,0 +1,92 @@
+#simple calculator
+a=int(input("enter first num :"))
+b=int(input("enter second num :"))
+print("addition of two nums is :",a+b)
+print("subtraction of two nums is :",a-b)
+print("division of two nums is :",a/b)
+print("multiplication of two nums is :",a*b)
+print("modulus of two nums is :",a%b)
+
+
+#calculator with format method.
+a=int(input("enter first num :"))
+b=int(input("enter second num :"))
+sum= a+b
+print("addition of two nums is :{}".format(sum))
+sub=a-b
+print("subtraction of two nums is: {}".format(sub))
+division=int(a/b)
+print("division of two nums is : {}".format(division))
+mul=a*b
+print("multiplication of two nums is : {}".format(mul))
+modulus=a%b
+print("modulus of two nums is : {}".format(modulus))
+
+
+#calculator with format method by passing indexs.
+a=int(input("enter first num :"))
+b=int(input("enter second num :"))
+add=int(a+b)
+sub=int(a-b)
+div=int(a/b)
+mul=int(a*b)
+mod=int(a%b)
+calculator="addition of two nums is : {0}, subtraction of two nums is : {1}, division of two nums is : {2}, multiplication of two nums is : {3}, modulus of two nums is : {4}"
+print(calculator.format(add,sub,div,mul,mod))
+
+#calculator with if else.
+a=int(input("enter first num :"))
+b=int(input("enter second num :"))
+oop=str(input("enter a case :"))
+
+if oop=="+":
+    print("addition is = ",a+b)
+elif oop=="-":
+    print("subtraction of numbs is =",a-b)
+elif oop=="*":
+    print("multiplication of nums is =",a*b)
+elif oop=="/":
+    print("division of nums is =",a/b)
+else:
+    print("modulus od nums is =",a%b)
+    
+
+#calculator with functions.
+a=int(input("enter first num :"))
+b=int(input("enter second num :"))
+
+def add():
+    add=a+b 
+    return add
+add()
+
+print("addition of nums is =",add())
+
+def sub():
+    sub=a-b 
+    return sub
+sub()
+
+print("subtraction of nums is =",sub())
+
+def div():
+    div=a/b 
+    return div
+div()
+
+print("division of nums is =",div())
+
+def mul():
+    mul=a*b 
+    return mul
+mul()
+
+print("multiplication of nums is =",mul())
+
+def modulus():
+    mod=a%b 
+    return mod
+modulus()
+
+print("modulus of nums is =",modulus())
+
