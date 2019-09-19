@@ -1,0 +1,148 @@
+#python program to print following string in a specific format.
+print("twinkle,twinkle,little star,")
+
+print("\thow i wonder what you are!")
+
+print("\t\tup above the world so high"),
+
+print("\t\tlike a diamond in th sky.")
+
+print("twinkle,twinkle,little star,")
+
+print("\thow i wonder what you are")
+
+
+#sequence of numbers with comma-separated
+numbers = str(input("enter numbers :"))   
+
+nlist = list(numbers.split(","))
+
+print(nlist)
+ntuple = tuple(numbers.split(","))
+
+print(ntuple)        
+
+
+#host ip address
+import socket
+
+socket.gethostbyname(socket.gethostname())
+
+
+#host name and ip
+import socket
+
+def get_host_name_ip():
+    try:
+        host_name=socket.gethostname()
+        
+        host_ip=socket.gethostbyname(host_name)
+        
+        print("hostname :",host_name)
+        
+        print("ip :",host_ip)
+    
+    except:
+        
+        print("unable to get hostname and ip")
+
+get_host_name_ip()
+
+
+# get python version
+import sys
+
+print(sys.version)
+
+sys.version_info
+
+
+#print date and time
+import datetime
+
+print(datetime.datetime.now())
+
+
+#empties the list and variable without destroying them.
+ndict = {
+    
+    "a":200
+    
+        }
+
+print(type(ndict)()) #use this specific method to clear
+
+nlist = ["200","abc","345","osama","osama123"]
+
+nlist.clear() # second method to clear a list
+
+print(nlist)
+
+n = 20
+
+print(type(n)()) # return 0 without dstroying variable.
+
+
+#Write a Python program to print out all even numbers from a given numbers list in the same order and stop the printing
+#if any numbers that come after 237 in the sequence.
+
+list = [386,462,47,418,907,344,236,375,823,566,597,978,328,615,953,345,399,162,758,219,918,237,412,566,826,248,866,950,626,
+        
+        949,687,217,815,67,104,58,512,24,892,894,767,553,81,379,843,831,445,742,717,958,743,527]
+
+for x in list:
+   
+    if (x % 2 ==0):
+        
+        print(x)
+    
+    if (x==237):
+        
+        print(x)
+        
+        break;
+
+
+#write a python program to find location of python module sources.
+import sys
+
+print("\nList of directories in sys module:")
+
+print(sys.path)
+
+print("\nList of directories in os module:")
+
+import os
+
+print(os.path)
+
+
+#print name in reverse order with a space between them.
+
+first_name = (input("enter your first name:"))
+
+last_name = (input("enter your last name:"))
+
+full_name = (last_name+" "+first_name)
+
+print(full_name)
+
+'''firstname = input("enter your first name:")
+
+fname_list = list()
+
+fname_list.append(firstname)
+
+lastname = input("enter your last name:")
+
+lname_list = list()
+
+lname_list.append(lastname)
+
+fullname_list = list(fname_list +" "+ lname_list)
+
+name_list=list(fullname_list)
+
+name_list.reverse()
+
+print(name_list)'''
